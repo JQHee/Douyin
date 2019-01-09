@@ -9,7 +9,12 @@ target 'Douyin' do
     pod 'HandyJSON'
     pod 'SnapKit', '~> 4.2.0'
     pod 'Starscream', '~> 3.0.6'
-    # pod 'libwebp', :git => 'https://github.com/webmproject/libwebp.git'
+    # 拉取master
+    # pod 'libwebp', :git => 'https://github.com/webmproject/libwebp.git', :branch => 'master'
+    # pod 'libwebp', :git => 'https://github.com/webmproject/libwebp.git', :branch => '1.0.1'
+    # pod 'libwebp', :git => 'https://github.com/webmproject/libwebp.git', :tag => 'v1.0.1'
+    # pod 'libwebp', :git => 'https://github.com/webmproject/libwebp.git', :commit => '928a75d'
+    # pod 'libwebp', :podspec => 'https://example.com/JSONKit.podspec'
     # open ~/.cocoapods/repos/master/Specs/1/9/2/libwebp
     # 修改本地libwebp地址为 https://github.com/webmproject/libwebp.git
     pod 'libwebp', '~>1.0.0'
