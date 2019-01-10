@@ -167,6 +167,7 @@ extension BFRxNetRequest {
         reachabilityManager.startListening()
         reachabilityManager.listener = { status in
             block(status)
+            BFBarista.post(notification: .network, object: status as AnyObject)
         }
     }
     

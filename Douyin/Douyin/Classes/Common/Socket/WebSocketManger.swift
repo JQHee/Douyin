@@ -13,9 +13,9 @@ let WebSocketDidReceiveMessageNotification:String = "WebSocketDidReceiveMessageN
 
 let MaxReConnectCount = 5
 
-class WebSocketManger:NSObject {
+class WebSocketManger: NSObject {
     
-    var reOpenCount:Int = 0
+    var reOpenCount: Int = 0
     
     let websocket = { () -> WebSocket in
         var components = URLComponents.init(url: URL.init(string: API.baseURL + "/groupchat")!, resolvingAgainstBaseURL: false)
@@ -34,7 +34,11 @@ class WebSocketManger:NSObject {
     private override init() {
         super.init()
         websocket.delegate = self
-        // NotificationCenter.default.addObserver(self, selector: #selector(onNetworkStatusChange(notification:)), name: Notification.Name(rawValue: NetworkStatesChangeNotification), object: nil)
+        BFBarista.add(observer: self, selector: #selector(onNetworkStatusChange(notification:)), notification: .network)
+    }
+    
+    deinit {
+        BFBarista.remove(observer: self, notification: .network)
     }
     
     class func shared() -> WebSocketManger {
@@ -67,14 +71,11 @@ class WebSocketManger:NSObject {
     
     // 断网重连
     @objc func onNetworkStatusChange(notification:NSNotification) {
-//        if(!NetworkManager.isNotReachableStatus(status: notification.object) && !(websocket.isConnected)) {
-//            reConnect()
-//        }
+        if(!BFRxNetRequest.isNotReachableStatus(status: notification.object) && !(websocket.isConnected)) {
+            reConnect()
+        }
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
 }
 
 extension WebSocketManger:WebSocketDelegate {
@@ -84,8 +85,7 @@ extension WebSocketManger:WebSocketDelegate {
     }
     
     func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
-        /*
-        if(NetworkManager.networkStatus() != .notReachable) {
+        if(BFRxNetRequest.networkStatus() != .notReachable) {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5.0 , execute: {
                 if(self.websocket.isConnected) {
                     self.reOpenCount = 0
@@ -99,7 +99,6 @@ extension WebSocketManger:WebSocketDelegate {
                 self.reOpenCount += 1
             })
         }
-         */
     }
     
     func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
