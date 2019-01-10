@@ -1,9 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
   - CTMediator (25)
-  - Differentiator (3.1.0)
-  - GDPerformanceView-Swift (2.0.2)
-  - HandyJSON (4.2.1)
   - Kingfisher (4.10.1)
   - libwebp (1.0.0):
     - libwebp/core (= 1.0.0)
@@ -40,20 +37,9 @@ PODS:
     - RxSwift (~> 4.0)
   - "NSObject+Rx (4.4.1)":
     - RxSwift (~> 4.3)
-  - ReactorKit (1.2.1):
-    - RxSwift (>= 4.0.0)
   - Result (4.0.1)
-  - RxAlamofire (4.3.0):
-    - RxAlamofire/Core (= 4.3.0)
-  - RxAlamofire/Core (4.3.0):
-    - Alamofire (~> 4.5)
-    - RxSwift (~> 4)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxDataSources (3.1.0):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxGesture (2.1.0):
     - RxCocoa (~> 4.4.0)
@@ -63,80 +49,66 @@ PODS:
   - SnapKit (4.2.0)
   - Starscream (3.0.6)
   - SVProgressHUD (2.2.5)
+  - SwiftLint (0.29.3)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
-  - Alamofire
   - CTMediator (~> 25)
-  - GDPerformanceView-Swift (~> 2.0.2)
-  - HandyJSON
   - Kingfisher (~> 4.10.1)
   - libwebp (~> 1.0.0)
   - MJRefresh (~> 3.1.15.7)
   - Moya (~> 12.0.1)
   - Moya/RxSwift (~> 12.0.1)
   - "NSObject+Rx (~> 4.4.1)"
-  - ReactorKit (~> 1.2.1)
-  - Result (~> 4.0.0)
-  - RxAlamofire (~> 4.3.0)
+  - Result (~> 4.0.1)
   - RxCocoa (~> 4.4.0)
-  - RxDataSources (~> 3.1.0)
   - RxGesture (~> 2.1.0)
   - RxSwift (~> 4.4.0)
   - SnapKit (~> 4.2.0)
   - Starscream (~> 3.0.6)
   - SVProgressHUD (~> 2.2.5)
+  - SwiftLint (~> 0.29.3)
   - SwiftyJSON (~> 4.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - CTMediator
-    - Differentiator
-    - GDPerformanceView-Swift
-    - HandyJSON
     - Kingfisher
     - libwebp
     - MJRefresh
     - Moya
     - "NSObject+Rx"
-    - ReactorKit
     - Result
-    - RxAlamofire
     - RxAtomic
     - RxCocoa
-    - RxDataSources
     - RxGesture
     - RxSwift
     - SnapKit
     - Starscream
     - SVProgressHUD
+    - SwiftLint
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
-  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
-  GDPerformanceView-Swift: a40b2f675589449f5b5082f3178f01bfdb7882ce
-  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   libwebp: e0c2a5daf37e99aeccd78bcdfe5587c70cb98572
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
-  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
   Result: a6e784bebf48b471d59cddc1adb81f41f678c487
-  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxGesture: 7f6dfb45dbde06e618c24442d38493e3144f2c95
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 9322cb031c0d0b9a52ee0ab290c9345040a7f915
+PODFILE CHECKSUM: d454431bd1dfe5b548477cf0e16bda7f9939e673
 
 COCOAPODS: 1.5.3

@@ -14,6 +14,16 @@
 		5E68AFC621E5E7BC00AA06DE /* DouyinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68AFC521E5E7BC00AA06DE /* DouyinTests.swift */; };
 		5E68AFD121E5E7BC00AA06DE /* DouyinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68AFD021E5E7BC00AA06DE /* DouyinUITests.swift */; };
 		5E68AFE121E5F5C500AA06DE /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68AFE021E5F5C500AA06DE /* test.swift */; };
+		5E771CFA21E6CF2000DD9549 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771CF921E6CF2000DD9549 /* Global.swift */; };
+		5E771D0021E6D04C00DD9549 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771CFF21E6D04C00DD9549 /* UIColor+.swift */; };
+		5E771D0B21E6D09100DD9549 /* RequestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D0421E6D09100DD9549 /* RequestApiManager.swift */; };
+		5E771D0C21E6D09100DD9549 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D0621E6D09100DD9549 /* Array+Safe.swift */; };
+		5E771D0D21E6D09100DD9549 /* BFRxRequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D0821E6D09100DD9549 /* BFRxRequestPlugin.swift */; };
+		5E771D0E21E6D09100DD9549 /* BFRxNetRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D0A21E6D09100DD9549 /* BFRxNetRequest.swift */; };
+		5E771D1021E6D0A500DD9549 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D0F21E6D0A500DD9549 /* API.swift */; };
+		5E771D1221E6D1D500DD9549 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D1121E6D1D500DD9549 /* String+.swift */; };
+		5E771D1421E6DECF00DD9549 /* DownloadApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D1321E6DECF00DD9549 /* DownloadApiManager.swift */; };
+		5E771D1621E6DEF500DD9549 /* BaseApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D1521E6DEF500DD9549 /* BaseApiManager.swift */; };
 		9BB9974219BEA11DF08D2FA0 /* Pods_DouyinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155916C9A5096BA3574A2974 /* Pods_DouyinUITests.framework */; };
 		F30622E8B64F6FD54EF79714 /* Pods_DouyinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D875BC7D5B4F1BA471C13F /* Pods_DouyinTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +61,17 @@
 		5E68AFD021E5E7BC00AA06DE /* DouyinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouyinUITests.swift; sourceTree = "<group>"; };
 		5E68AFD221E5E7BC00AA06DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E68AFE021E5F5C500AA06DE /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		5E771CF821E6CCD300DD9549 /* Douyin_brige_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Douyin_brige_header.h; sourceTree = "<group>"; };
+		5E771CF921E6CF2000DD9549 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		5E771CFF21E6D04C00DD9549 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		5E771D0421E6D09100DD9549 /* RequestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestApiManager.swift; sourceTree = "<group>"; };
+		5E771D0621E6D09100DD9549 /* Array+Safe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		5E771D0821E6D09100DD9549 /* BFRxRequestPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFRxRequestPlugin.swift; sourceTree = "<group>"; };
+		5E771D0A21E6D09100DD9549 /* BFRxNetRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFRxNetRequest.swift; sourceTree = "<group>"; };
+		5E771D0F21E6D0A500DD9549 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5E771D1121E6D1D500DD9549 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		5E771D1321E6DECF00DD9549 /* DownloadApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadApiManager.swift; sourceTree = "<group>"; };
+		5E771D1521E6DEF500DD9549 /* BaseApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiManager.swift; sourceTree = "<group>"; };
 		6B8303CAD62CFAEF3752F3D2 /* Pods_Douyin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douyin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A355B4108E362FB3956B8197 /* Pods-Douyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douyin/Pods-Douyin.debug.xcconfig"; sourceTree = "<group>"; };
 		A578CF1A332B0DD1F679DA27 /* Pods-DouyinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinUITests/Pods-DouyinUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +151,8 @@
 				5E68AFB721E5E7BC00AA06DE /* Assets.xcassets */,
 				5E68AFB921E5E7BC00AA06DE /* LaunchScreen.storyboard */,
 				5E68AFBC21E5E7BC00AA06DE /* Info.plist */,
+				5E771CF821E6CCD300DD9549 /* Douyin_brige_header.h */,
+				5E771CF921E6CF2000DD9549 /* Global.swift */,
 			);
 			path = Douyin;
 			sourceTree = "<group>";
@@ -163,9 +186,98 @@
 		5E68AFDF21E5F5A700AA06DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5E771CFB21E6D00100DD9549 /* Common */,
 				5E68AFDE21E5F59200AA06DE /* Sections */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5E771CFB21E6D00100DD9549 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0121E6D08100DD9549 /* HTTP */,
+				5E771CFC21E6D01000DD9549 /* Category */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5E771CFC21E6D01000DD9549 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				5E771CFE21E6D03800DD9549 /* Foundation */,
+				5E771CFD21E6D02700DD9549 /* UIKit */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		5E771CFD21E6D02700DD9549 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E771CFF21E6D04C00DD9549 /* UIColor+.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5E771CFE21E6D03800DD9549 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D1121E6D1D500DD9549 /* String+.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		5E771D0121E6D08100DD9549 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0221E6D09100DD9549 /* MoyaRequest */,
+				5E771D0F21E6D0A500DD9549 /* API.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		5E771D0221E6D09100DD9549 /* MoyaRequest */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0321E6D09100DD9549 /* ApiManagers */,
+				5E771D0521E6D09100DD9549 /* Base */,
+				5E771D0721E6D09100DD9549 /* Plugins */,
+				5E771D0921E6D09100DD9549 /* Requests */,
+			);
+			path = MoyaRequest;
+			sourceTree = "<group>";
+		};
+		5E771D0321E6D09100DD9549 /* ApiManagers */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0421E6D09100DD9549 /* RequestApiManager.swift */,
+				5E771D1321E6DECF00DD9549 /* DownloadApiManager.swift */,
+				5E771D1521E6DEF500DD9549 /* BaseApiManager.swift */,
+			);
+			path = ApiManagers;
+			sourceTree = "<group>";
+		};
+		5E771D0521E6D09100DD9549 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0621E6D09100DD9549 /* Array+Safe.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E771D0721E6D09100DD9549 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0821E6D09100DD9549 /* BFRxRequestPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		5E771D0921E6D09100DD9549 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D0A21E6D09100DD9549 /* BFRxNetRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		839248735BF1AEE3D603357F /* Frameworks */ = {
@@ -318,19 +430,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Douyin/Pods-Douyin-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
-				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/GDPerformanceView-Swift/GDPerformanceView_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -345,19 +451,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GDPerformanceView_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -444,8 +544,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E771D0C21E6D09100DD9549 /* Array+Safe.swift in Sources */,
+				5E771D0E21E6D09100DD9549 /* BFRxNetRequest.swift in Sources */,
+				5E771D1221E6D1D500DD9549 /* String+.swift in Sources */,
 				5E68AFB121E5E7A900AA06DE /* AppDelegate.swift in Sources */,
+				5E771D0021E6D04C00DD9549 /* UIColor+.swift in Sources */,
 				5E68AFE121E5F5C500AA06DE /* test.swift in Sources */,
+				5E771D1421E6DECF00DD9549 /* DownloadApiManager.swift in Sources */,
+				5E771D1621E6DEF500DD9549 /* BaseApiManager.swift in Sources */,
+				5E771D0B21E6D09100DD9549 /* RequestApiManager.swift in Sources */,
+				5E771CFA21E6CF2000DD9549 /* Global.swift in Sources */,
+				5E771D1021E6D0A500DD9549 /* API.swift in Sources */,
+				5E771D0D21E6D09100DD9549 /* BFRxRequestPlugin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -598,7 +708,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -621,6 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Douyin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Douyin/Douyin_brige_header.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -639,6 +750,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.Douyin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Douyin/Douyin_brige_header.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
