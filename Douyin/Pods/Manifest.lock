@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.8.0)
   - CTMediator (25)
   - ETNavBarTransparent (1.1.2)
+  - HandyJSON (4.2.1)
   - Kingfisher (4.10.1)
   - libwebp (1.0.0):
     - libwebp/core (= 1.0.0)
@@ -57,6 +58,7 @@ PODS:
 DEPENDENCIES:
   - CTMediator (~> 25)
   - ETNavBarTransparent (~> 1.1.2)
+  - HandyJSON (~> 4.2.1)
   - Kingfisher (~> 4.10.1)
   - libwebp (~> 1.0.0)
   - MJRefresh (~> 3.1.15.7)
@@ -79,6 +81,7 @@ SPEC REPOS:
     - Alamofire
     - CTMediator
     - ETNavBarTransparent
+    - HandyJSON
     - Kingfisher
     - libwebp
     - MJRefresh
@@ -100,6 +103,7 @@ SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   ETNavBarTransparent: 0afd5a96a0bf07899b9140c585611d79ea6dbf96
+  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   libwebp: e0c2a5daf37e99aeccd78bcdfe5587c70cb98572
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
@@ -117,6 +121,6 @@ SPEC CHECKSUMS:
   SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: b0cee7203074d6e0512dee632197912279c201af
+PODFILE CHECKSUM: bd7226674e549e1e91acd17627a8faa1a3ea01f9
 
 COCOAPODS: 1.5.3

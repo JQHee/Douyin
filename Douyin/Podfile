@@ -33,6 +33,8 @@ target 'Douyin' do
     # 为了更加方便添加点击事件
     pod 'RxGesture', '~> 2.1.0'
     pod 'SwiftyJSON', '~> 4.2.0'
+    # struct convert json
+    pod 'HandyJSON', '~> 4.2.1'
     pod 'SVProgressHUD', '~> 2.2.5'
     # 路由
     pod 'CTMediator', '~> 25'

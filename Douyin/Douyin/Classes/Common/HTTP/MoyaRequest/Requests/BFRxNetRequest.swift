@@ -49,7 +49,10 @@ public class BFRxNetRequest: NSObject {
     private let barrierQueue = DispatchQueue(label: "cn.bf.BFRxNetRequest", attributes: .concurrent)
     private var fetchRequestKeys = [String]()
     
-    private lazy var reachability = Reachability()
+    private static let reachabilityManager = { () -> NetworkReachabilityManager in
+        let manager = NetworkReachabilityManager.init()
+        return manager!
+    }()
     
     // no progress request
     @discardableResult
@@ -159,33 +162,23 @@ public class BFRxNetRequest: NSObject {
 
 // MARK: - NetworkMonitor
 extension BFRxNetRequest {
-    func startNetworkMonitor(finishBlock: @escaping (_ status: NetworkStatus) -> ()) {
-        
-        reachability?.whenReachable = { reachability in
-            if reachability.connection == .wifi {
-                print("Reachable via WiFi")
-                finishBlock(.wifi)
-            } else {
-                finishBlock(.cellular)
-                print("Reachable via Cellular")
-            }
-        }
-        reachability?.whenUnreachable = { _ in
-            print("Not reachable")
-            finishBlock(.none)
-        }
-        
-        do {
-            try reachability?.startNotifier()
-        } catch {
-            print("Unable to start notifier")
-            finishBlock(.none)
+    
+    static func startMonitoring(block: @escaping (_ status: NetworkReachabilityManager.NetworkReachabilityStatus) -> ()) {
+        reachabilityManager.startListening()
+        reachabilityManager.listener = { status in
+            block(status)
         }
     }
     
-    func stopNotifier() {
-        reachability?.stopNotifier()
+    static func networkStatus() ->NetworkReachabilityManager.NetworkReachabilityStatus {
+        return reachabilityManager.networkReachabilityStatus
     }
+    
+    static func isNotReachableStatus(status: Any?) -> Bool {
+        let netStatus = status as! NetworkReachabilityManager.NetworkReachabilityStatus
+        return netStatus == .notReachable
+    }
+    
 }
 
 extension BFRxNetRequest {
