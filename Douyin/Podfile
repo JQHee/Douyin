@@ -15,10 +15,17 @@ target 'Douyin' do
     # 修改本地libwebp地址为 https://github.com/webmproject/libwebp.git
     pod 'SnapKit', '~> 4.2.0'
     pod 'Starscream', '~> 3.0.6'
+    # pod 'YYWebImage'
+    # pod 'YYImage/WebP'
+    # pod 'SDWebImage', '~> 5.0.0-beta3'
+    # pod 'SDWebImage/WebP', '~> 5.0.0-beta3'
     pod 'libwebp', '~>1.0.0'
     pod 'MJRefresh', '~> 3.1.15.7'
     # 5.0 不支持 iOS 9
     pod 'Kingfisher', '~> 4.10.1'
+    # webp image
+    # 最低支持10.0
+    # pod 'KingfisherWebP', '~> 0.5.0'
     # 使用代码规范框架
     pod 'SwiftLint', '~> 0.29.3'
     # 导航栏平滑切换
