@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import WebKit
+import AdSupport
 
 
 // 常量
@@ -43,6 +44,8 @@ func dispatch_async_safely_main_queue(_ block: @escaping () -> Void) {
         }
     }
 }
+
+let UDID: String = ASIdentifierManager.shared().advertisingIdentifier.uuidString
 
 // 全局适配ios 11
 func adapterIOS_11() {

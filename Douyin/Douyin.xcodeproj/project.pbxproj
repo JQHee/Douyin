@@ -34,6 +34,7 @@
 		5E771D2C21E6F6CF00DD9549 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D2B21E6F6CF00DD9549 /* UIApplication+.swift */; };
 		5E771D2E21E6F6EB00DD9549 /* UINavigationBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D2D21E6F6EB00DD9549 /* UINavigationBar+.swift */; };
 		5E771D3321E700F400DD9549 /* UserHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D3221E700F400DD9549 /* UserHomePageViewController.swift */; };
+		5E771D3621E722E400DD9549 /* WebSocketManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E771D3521E722E400DD9549 /* WebSocketManger.swift */; };
 		9BB9974219BEA11DF08D2FA0 /* Pods_DouyinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155916C9A5096BA3574A2974 /* Pods_DouyinUITests.framework */; };
 		F30622E8B64F6FD54EF79714 /* Pods_DouyinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D875BC7D5B4F1BA471C13F /* Pods_DouyinTests.framework */; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		5E771D2B21E6F6CF00DD9549 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		5E771D2D21E6F6EB00DD9549 /* UINavigationBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+.swift"; sourceTree = "<group>"; };
 		5E771D3221E700F400DD9549 /* UserHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomePageViewController.swift; sourceTree = "<group>"; };
+		5E771D3521E722E400DD9549 /* WebSocketManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketManger.swift; sourceTree = "<group>"; };
 		6B8303CAD62CFAEF3752F3D2 /* Pods_Douyin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douyin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A355B4108E362FB3956B8197 /* Pods-Douyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douyin/Pods-Douyin.debug.xcconfig"; sourceTree = "<group>"; };
 		A578CF1A332B0DD1F679DA27 /* Pods-DouyinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinUITests/Pods-DouyinUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		5E771CFB21E6D00100DD9549 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5E771D3421E722D500DD9549 /* Socket */,
 				5E771D0121E6D08100DD9549 /* HTTP */,
 				5E771CFC21E6D01000DD9549 /* Category */,
 			);
@@ -332,6 +335,14 @@
 				5E771D3221E700F400DD9549 /* UserHomePageViewController.swift */,
 			);
 			path = UserHomePage;
+			sourceTree = "<group>";
+		};
+		5E771D3421E722D500DD9549 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				5E771D3521E722E400DD9549 /* WebSocketManger.swift */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 		839248735BF1AEE3D603357F /* Frameworks */ = {
@@ -612,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E771D0C21E6D09100DD9549 /* Array+Safe.swift in Sources */,
+				5E771D3621E722E400DD9549 /* WebSocketManger.swift in Sources */,
 				5E771D0E21E6D09100DD9549 /* BFRxNetRequest.swift in Sources */,
 				5E771D2C21E6F6CF00DD9549 /* UIApplication+.swift in Sources */,
 				5E771D2E21E6F6EB00DD9549 /* UINavigationBar+.swift in Sources */,
