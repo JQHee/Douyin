@@ -21,6 +21,8 @@ target 'Douyin' do
     pod 'Kingfisher', '~> 4.10.1'
     # 使用代码规范框架
     pod 'SwiftLint', '~> 0.29.3'
+    # 导航栏平滑切换
+    pod 'ETNavBarTransparent', '~> 1.1.2'
     
     pod 'RxSwift', '~> 4.4.0'
     pod 'RxCocoa', '~> 4.4.0'

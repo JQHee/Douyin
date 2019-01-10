@@ -15,3 +15,4 @@
 @import RxGesture;
 @import MJRefresh;
 @import Moya;
+@import ETNavBarTransparent;
