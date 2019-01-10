@@ -10,6 +10,13 @@ import UIKit
 import RxSwift
 import Moya
 import Alamofire
+import Reachability
+
+enum NetworkStatus {
+    case none
+    case wifi
+    case cellular
+}
 
 typealias RxMoyaTargetType = Moya.TargetType & MoyaAddable
 
@@ -37,10 +44,12 @@ public class BFRxNetRequest: NSObject {
 
     static let shared = BFRxNetRequest()
     private override init() {}
-    
+
     // is request once
     private let barrierQueue = DispatchQueue(label: "cn.bf.BFRxNetRequest", attributes: .concurrent)
     private var fetchRequestKeys = [String]()
+    
+    private lazy var reachability = Reachability()
     
     // no progress request
     @discardableResult
@@ -148,6 +157,37 @@ public class BFRxNetRequest: NSObject {
     
 }
 
+// MARK: - NetworkMonitor
+extension BFRxNetRequest {
+    func startNetworkMonitor(finishBlock: @escaping (_ status: NetworkStatus) -> ()) {
+        
+        reachability?.whenReachable = { reachability in
+            if reachability.connection == .wifi {
+                print("Reachable via WiFi")
+                finishBlock(.wifi)
+            } else {
+                finishBlock(.cellular)
+                print("Reachable via Cellular")
+            }
+        }
+        reachability?.whenUnreachable = { _ in
+            print("Not reachable")
+            finishBlock(.none)
+        }
+        
+        do {
+            try reachability?.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+            finishBlock(.none)
+        }
+    }
+    
+    func stopNotifier() {
+        reachability?.stopNotifier()
+    }
+}
+
 extension BFRxNetRequest {
     
     private func isSameRequest<T: RxMoyaTargetType>(_ target: T) -> Bool {
@@ -158,7 +198,7 @@ extension BFRxNetRequest {
             barrierQueue.sync(flags: .barrier) {
                 result = fetchRequestKeys.contains(key)
                 if !result {
-                    // fetchRequestKeys.append(key)
+                    fetchRequestKeys.append(key)
                 }
             }
             return result

@@ -23,6 +23,7 @@ target 'Douyin' do
     pod 'SwiftLint', '~> 0.29.3'
     # 导航栏平滑切换
     pod 'ETNavBarTransparent', '~> 1.1.2'
+    pod 'ReachabilitySwift', '~> 4.3.0'
     
     pod 'RxSwift', '~> 4.4.0'
     pod 'RxCocoa', '~> 4.4.0'

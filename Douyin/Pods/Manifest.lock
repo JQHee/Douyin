@@ -38,6 +38,7 @@ PODS:
     - RxSwift (~> 4.0)
   - "NSObject+Rx (4.4.1)":
     - RxSwift (~> 4.3)
+  - ReachabilitySwift (4.3.0)
   - Result (4.0.1)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
@@ -62,6 +63,7 @@ DEPENDENCIES:
   - Moya (~> 12.0.1)
   - Moya/RxSwift (~> 12.0.1)
   - "NSObject+Rx (~> 4.4.1)"
+  - ReachabilitySwift (~> 4.3.0)
   - Result (~> 4.0.1)
   - RxCocoa (~> 4.4.0)
   - RxGesture (~> 2.1.0)
@@ -82,6 +84,7 @@ SPEC REPOS:
     - MJRefresh
     - Moya
     - "NSObject+Rx"
+    - ReachabilitySwift
     - Result
     - RxAtomic
     - RxCocoa
@@ -102,6 +105,7 @@ SPEC CHECKSUMS:
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   Result: a6e784bebf48b471d59cddc1adb81f41f678c487
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
@@ -113,6 +117,6 @@ SPEC CHECKSUMS:
   SwiftLint: bfa7ca7b4d170cfaf0d236ca3ffd969e88a2f002
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 4bee088c7c31092b388ae9f3710fd1c13d3935f3
+PODFILE CHECKSUM: b0cee7203074d6e0512dee632197912279c201af
 
 COCOAPODS: 1.5.3
