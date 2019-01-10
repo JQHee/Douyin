@@ -19,7 +19,7 @@ enum ApiManager {
     case testUserapi([String: Any])
 }
 
-extension ApiManager: RxMoyaTargetType {
+extension ApiManager: RxMoyaTargetType & BaseRequest {
     
     var sampleData: Data {
         return "{}".data(using: String.Encoding.utf8)!
@@ -58,6 +58,7 @@ extension ApiManager: RxMoyaTargetType {
         switch self {
          
         case .testHome:
+            print(self.parameters ?? [:])
             // return .requestPlain
             var params: [String: Any] = [:]
             params["channel"] = 1
