@@ -34,4 +34,21 @@ extension String {
         return md5String;
     }
     
+    static func format(decimal: Float, _ maximumDigits: Int = 1, _ minimumDigits: Int = 1) ->String? {
+        let number = NSNumber(value: decimal)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.maximumFractionDigits = maximumDigits //设置小数点后最多2位
+        numberFormatter.minimumFractionDigits = minimumDigits //设置小数点后最少2位（不足补0）
+        return numberFormatter.string(from: number)
+    }
+    
+    func urlScheme(scheme:String) -> URL? {
+        if let url = URL.init(string: self) {
+            var components = URLComponents.init(url: url, resolvingAgainstBaseURL: false)
+            components?.scheme = scheme
+            return components?.url
+        }
+        return nil
+    }
+    
 }

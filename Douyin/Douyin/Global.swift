@@ -12,6 +12,10 @@ import AdSupport
 
 
 // 常量
+var kScreenFrame: CGRect {
+    return UIScreen.main.bounds
+}
+
 var kScreenW: CGFloat {
     return UIScreen.main.bounds.width
 }

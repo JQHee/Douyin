@@ -17,9 +17,9 @@ target 'Douyin' do
     pod 'Starscream', '~> 3.0.6'
     # pod 'YYWebImage'
     # pod 'YYImage/WebP'
-    # pod 'SDWebImage', '~> 5.0.0-beta3'
-    # pod 'SDWebImage/WebP', '~> 5.0.0-beta3'
-    pod 'libwebp', '~>1.0.0'
+    pod 'SDWebImage', '~> 5.0.0-beta3'
+    pod 'SDWebImage/WebP', '~> 5.0.0-beta3'
+    # pod 'libwebp', '~>1.0.0'
     pod 'MJRefresh', '~> 3.1.15.7'
     # 5.0 不支持 iOS 9
     pod 'Kingfisher', '~> 4.10.1'
