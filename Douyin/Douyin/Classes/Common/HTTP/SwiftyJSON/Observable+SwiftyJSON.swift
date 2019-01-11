@@ -8,7 +8,7 @@
 import Foundation
 
 extension ObservableType where E == Any {
-    public func mapJSON(_ json : @escaping ((E) -> JSON)) -> Observable<Any> {
+    public func sJMapJSON(_ json : @escaping ((E) -> JSON)) -> Observable<Any> {
         return flatMap { (result) -> Observable<Any> in
             return Observable.just(json(result).object)
         }
