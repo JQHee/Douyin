@@ -58,6 +58,8 @@ public class BFRxNetRequest: NSObject {
     @discardableResult
     func request<T: RxMoyaTargetType>(target: T) -> Observable<Response>? {
         
+        debugPrint("请求链接：" + "\(target.baseURL)" + "\(target.path)")
+        
         if isSameRequest(target) {
             return nil
         }
@@ -87,6 +89,8 @@ public class BFRxNetRequest: NSObject {
     // progress request
     @discardableResult
     func progressRequest<T: RxMoyaTargetType>(target: T) -> Observable<ProgressResponse>? {
+        
+        debugPrint("请求链接：" + "\(target.baseURL)" + "\(target.path)")
         
         if isSameRequest(target) {
             return nil

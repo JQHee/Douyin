@@ -12,6 +12,8 @@
 
 @import RxSwift;
 @import RxCocoa;
+@import NSObject_Rx;
+@import HandyJSON;
 @import SwiftyJSON;
 @import RxGesture;
 @import MJRefresh;

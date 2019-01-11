@@ -50,6 +50,9 @@
 		5E8C226821E86C810059FA31 /* NumberExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C226521E86C810059FA31 /* NumberExtension.swift */; };
 		5E8C226921E86C810059FA31 /* ExOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C226621E86C810059FA31 /* ExOptional.swift */; };
 		5E8C226C21E86CF90059FA31 /* Observable+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C226B21E86CF90059FA31 /* Observable+SwiftyJSON.swift */; };
+		5E8C227021E881260059FA31 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C226F21E881260059FA31 /* BaseModel.swift */; };
+		5E8C227221E8818D0059FA31 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C227121E8818D0059FA31 /* Visitor.swift */; };
+		5E8C227521E884930059FA31 /* VisitorRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C227421E884930059FA31 /* VisitorRequest.swift */; };
 		9BB9974219BEA11DF08D2FA0 /* Pods_DouyinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155916C9A5096BA3574A2974 /* Pods_DouyinUITests.framework */; };
 		F30622E8B64F6FD54EF79714 /* Pods_DouyinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D875BC7D5B4F1BA471C13F /* Pods_DouyinTests.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +127,9 @@
 		5E8C226521E86C810059FA31 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
 		5E8C226621E86C810059FA31 /* ExOptional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExOptional.swift; sourceTree = "<group>"; };
 		5E8C226B21E86CF90059FA31 /* Observable+SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		5E8C226F21E881260059FA31 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		5E8C227121E8818D0059FA31 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		5E8C227421E884930059FA31 /* VisitorRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorRequest.swift; sourceTree = "<group>"; };
 		6B8303CAD62CFAEF3752F3D2 /* Pods_Douyin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Douyin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A355B4108E362FB3956B8197 /* Pods-Douyin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Douyin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Douyin/Pods-Douyin.debug.xcconfig"; sourceTree = "<group>"; };
 		A578CF1A332B0DD1F679DA27 /* Pods-DouyinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouyinUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouyinUITests/Pods-DouyinUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -362,6 +368,7 @@
 		5E771D2821E6F58700DD9549 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5E8C226D21E880FA0059FA31 /* Public */,
 				5E771D2921E6F62800DD9549 /* SwipeBackBaseViewController.swift */,
 			);
 			path = Main;
@@ -444,6 +451,32 @@
 				5E8C226B21E86CF90059FA31 /* Observable+SwiftyJSON.swift */,
 			);
 			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		5E8C226D21E880FA0059FA31 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				5E8C227321E884720059FA31 /* Request */,
+				5E8C226E21E881060059FA31 /* Model */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		5E8C226E21E881060059FA31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E8C226F21E881260059FA31 /* BaseModel.swift */,
+				5E8C227121E8818D0059FA31 /* Visitor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5E8C227321E884720059FA31 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				5E8C227421E884930059FA31 /* VisitorRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		839248735BF1AEE3D603357F /* Frameworks */ = {
@@ -741,12 +774,15 @@
 				5E8C226321E86C150059FA31 /* UISegmentedControl+Rx.swift in Sources */,
 				5E771D0021E6D04C00DD9549 /* UIColor+.swift in Sources */,
 				5E8C224721E84DC80059FA31 /* WebDownloadOperation.swift in Sources */,
+				5E8C227221E8818D0059FA31 /* Visitor.swift in Sources */,
 				5E8C226821E86C810059FA31 /* NumberExtension.swift in Sources */,
 				5E8C226C21E86CF90059FA31 /* Observable+SwiftyJSON.swift in Sources */,
 				5E8C226221E86C150059FA31 /* NSObject+Rx.swift in Sources */,
 				5E8C224421E84DC80059FA31 /* WebCacheManager.swift in Sources */,
 				5E771D2A21E6F62800DD9549 /* SwipeBackBaseViewController.swift in Sources */,
+				5E8C227521E884930059FA31 /* VisitorRequest.swift in Sources */,
 				5E771D1421E6DECF00DD9549 /* DownloadApiManager.swift in Sources */,
+				5E8C227021E881260059FA31 /* BaseModel.swift in Sources */,
 				5E8C225C21E86B690059FA31 /* BaseViewModelProtocol.swift in Sources */,
 				5E771D1621E6DEF500DD9549 /* BaseApiManager.swift in Sources */,
 				5E771D3321E700F400DD9549 /* UserHomePageViewController.swift in Sources */,

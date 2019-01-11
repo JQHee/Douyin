@@ -14,9 +14,7 @@ import Foundation
 import Moya
 
 enum ApiManager {
-    case testHome
-    case testUser([String: Any])
-    case testUserapi([String: Any])
+    case createVisitor(r: VisitorRequest)
 }
 
 extension ApiManager: RxMoyaTargetType & BaseRequest {
@@ -26,53 +24,37 @@ extension ApiManager: RxMoyaTargetType & BaseRequest {
     }
     
     var baseURL: URL {
-        switch self {
-        case .testHome:
-            return URL.init(string: "https://douban.fm")!
-            
-        default:
-            return URL.init(string: "")!
-        }
+        return URL.init(string: API.baseURL)!
     }
     
     var path: String {
         switch self {
-        case .testHome:
-            return "/j/mine/playlist"
-        default:
-            return ""
+        case .createVisitor(_):
+            return API.CREATE_VISITOR_BY_UDID_URL
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .testHome:
-            return .get
-            
-        default:
+        case .createVisitor(_):
             return .post
         }
     }
     
     var task: Task {
         switch self {
-         
-        case .testHome:
-            print(self.parameters ?? [:])
+        case .createVisitor(let request):
+            print(request.toJSON() ?? [:])
+            print(request.parameters ?? [:])
+            let params = request.toJSON() ?? [:]
+            // print(params)
             // return .requestPlain
-            var params: [String: Any] = [:]
-            params["channel"] = 1
-            params["type"] = "n"
-            params["from"] = "mainsite"
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
-            
-        case .testUser(let paramete):
-            // Task.requestCompositeParameters(bodyParameters: <#T##[String : Any]#>, bodyEncoding: <#T##ParameterEncoding#>, urlParameters: <#T##[String : Any]#>)
-            return .requestParameters(parameters: paramete, encoding: URLEncoding.default)
-            
-        default:
-            return .requestPlain
         }
+    }
+    
+    var validationType: ValidationType {
+        return .successCodes
     }
     
     var headers: [String : String]? {

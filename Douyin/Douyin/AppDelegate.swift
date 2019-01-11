@@ -19,11 +19,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = UserHomePageViewController()
         self.window?.makeKeyAndVisible()
         
-        // 开启网络监听
+        AVPlayerManager.setAudioMode()
         BFRxNetRequest.startMonitoring { (status) in
-            
         }
+        WebSocketManger.shared().connect()
+        
+        visitorLogin()
+        
         return true
+    }
+    
+    //
+    func visitorLogin() {
+        
+        let request = VisitorRequest()
+        BFRxNetRequest.rx.sendRequest(target: ApiManager.createVisitor(r: request))?
+            .subscribe(onNext: { (response) in
+                do {
+                    let data = try response.filterSuccessfulStatusCodes()
+                    let jsonData = try data.mapJSON()
+                    print(jsonData)
+                    
+                } catch let error {
+                    let err = error as NSError
+                    print(err)
+                }
+                
+        }, onError: { (error) in
+            let err = error as NSError
+            print(err)
+        }).disposed(by: rx.disposeBag)
     }
 
 }
